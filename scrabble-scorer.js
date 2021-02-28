@@ -26,8 +26,7 @@ function oldScrabbleScorer(word) {
  
 	  }
 	}
-  console.log(`Score for '${word.toLowerCase()}': ${String(letterPoints)}`);
-  return String(letterPoints);
+  console.log(`Score for '${word.toLowerCase()}': ${letterPoints}`);
 }
 
 // your job is to finish writing these functions and variables that we've named //
@@ -44,8 +43,7 @@ let simpleScore = function (word){
   for (i = 0; i < word.length; i++){
     letterPoints += 1;
   }
-  console.log(`Score for '${word.toLowerCase()}': ${String(letterPoints)}`);
-  return String(letterPoints);
+  console.log(`Score for '${word.toLowerCase()}': ${letterPoints}`);
 };
 
 let vowelBonusScore = function(word){
@@ -59,8 +57,7 @@ let vowelBonusScore = function(word){
     letterPoints += 1;
     }
   }
-  console.log(`Score for '${word.toLowerCase()}': ${String(letterPoints)}`);
-  return String(letterPoints);
+  console.log(`Score for '${word.toLowerCase()}': ${letterPoints}`);
 };
 
 let scrabbleScore = function(word){
@@ -69,8 +66,7 @@ let scrabbleScore = function(word){
   for (let i = 0; i < word.length; i++) {
     letterPoints += newPointStructure[word[i]]
   }
-  console.log(`Score for '${word}': ${String(letterPoints)}`);
-  return String(letterPoints);
+  console.log(`Score for '${word}': ${letterPoints}`);
 };
 
 const scoringAlgorithms =[ 
